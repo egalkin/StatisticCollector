@@ -4,9 +4,9 @@ Collects statistic from Web Scraper
 Запустить перед запуском WebScraper
 
 Описание путей:\
-api/v1/collect - Принимает Post запрос вида:
+api/v1/collect - Принимает Post запрос вида:\
 {\
-	"url" : "https://spb.hh.ru/search/vacancy?text=scala&area=2",\
+	"url" : "https://spb.hh.ru/search/vacancy?text=scala&area=2",
 	"num_of_responses": 55,\
 	"last_mod": "today",\
 	"status": "create"\
