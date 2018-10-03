@@ -5,7 +5,7 @@ Collects statistic from Web Scraper
 
 Описание путей:\
 api/v1/collect - Принимает Post запрос вида:\
-
+{\
 	"url" : "https://spb.hh.ru/search/vacancy?text=scala&area=2",
 	"num_of_responses": 55,\
 	"last_mod": "today",\
