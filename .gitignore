@@ -1,0 +1,3 @@
+collector.app/venv/
+collector.app/__pycache__/
+collector.app/.idea/
