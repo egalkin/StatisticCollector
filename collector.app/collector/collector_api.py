@@ -1,4 +1,4 @@
-from flask_restful import Resource
+from flask_restful import Resource, abort
 import pygal
 
 from collector import collector_parser, plots_info
@@ -13,8 +13,10 @@ class Collector(Resource):
         url = args['url']
         if status == 'create':
             plots_info[url] = [int(nums_of_responses)]
-        if status == 'update':
+        elif status == 'update':
             plots_info[url].append(int(nums_of_responses))
+        else:
+            abort(406, message='No such status \'{}\' for collector'.format(status))
         return 200
 
 
