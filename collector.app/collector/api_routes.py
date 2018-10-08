@@ -5,4 +5,4 @@ api.add_resource(Collector, '/collect')
 api.add_resource(PlotBuilder, '/plot')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000)
