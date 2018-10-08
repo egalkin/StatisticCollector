@@ -5,22 +5,19 @@ Collects statistic from Web Scraper
 
 Описание путей:\
 api/v1/collect - Принимает Post запрос вида:\
+```
 {
-
   "url" : "[https://spb.hh.ru/search/vacancy?text=scala&area=2](https://spb.hh.ru/search/vacancy?text=scala&area=2)",
-
   "num_of_responses": 55,
-
   "last_mod": "today",  
- 
-"status": "create"  
-
+  "status": "create"  
 }
+```
 И обновляет или сохраняет новые данные\
 api/v1/plot - Принимает Post запрос вида:\
+```
 {
-
   "url" : url
-  
-}\
+}
+```
 И строит статистический график для полученного url
