@@ -1,5 +1,6 @@
 .idea/
 collector.app/venv/
+collector.app/__pycache__/
 collector.app/collector/__pycache__/
 collector.app/collector/api_folder/__pycache__/
 collector.app/.venv/
