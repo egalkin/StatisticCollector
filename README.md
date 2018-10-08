@@ -7,7 +7,7 @@ Collects statistic from Web Scraper
 api/v1/collect - Принимает Post запрос вида:
 ```
 {
-  "url" : "[https://spb.hh.ru/search/vacancy?text=scala&area=2](https://spb.hh.ru/search/vacancy?text=scala&area=2)",
+  "url" : "https://spb.hh.ru/search/vacancy?text=scala&area=2",
   "num_of_responses": 55,
   "last_mod": "today",  
   "status": "create"  
