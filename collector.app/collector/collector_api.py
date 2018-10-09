@@ -24,6 +24,8 @@ class PlotBuilder(Resource):
     def post(self):
         args = collector_parser.parse_args()
         url = args['url']
+        if url not in plots_info:
+            abort(404, message='No data for given url: \'{}\''.format(url))
         line_chart = pygal.Line()
         line_chart.title = 'Num of responses statistic'
         line_chart.x_label = map(str, range(1, len(plots_info[url]) + 1))
