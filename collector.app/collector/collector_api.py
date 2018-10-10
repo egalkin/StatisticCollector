@@ -3,10 +3,11 @@ import pygal
 
 from collector import collector_parser, plots_info
 
+from flask.wrappers import Response
 
 class Collector(Resource):
 
-    def post(self):
+    def post(self) -> int:
 
         args = collector_parser.parse_args()
         nums_of_responses = args['num_of_responses']
@@ -25,7 +26,7 @@ class Collector(Resource):
 
 
 class PlotBuilder(Resource):
-    def post(self):
+    def post(self) -> Response:
 
         args = collector_parser.parse_args()
         url = args['url']
